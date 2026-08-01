@@ -5,20 +5,20 @@
 class DownloadInboxCleaner < Formula
   desc "Cautious macOS Downloads-folder cleaner"
   homepage "https://github.com/stawan15/Download-scanner"
-  version "1.1.2"
+  version "1.1.3"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/stawan15/Download-scanner/releases/download/v1.1.2/Download-scanner_1.1.2_darwin_amd64.tar.gz"
-    sha256 "ebc76a3a8b4aa1ee4f164193c69e633574bb3c23bbd18a914450d7adffd63649"
+    url "https://github.com/stawan15/Download-scanner/releases/download/v1.1.3/Download-scanner_1.1.3_darwin_amd64.tar.gz"
+    sha256 "58e3b37f83b574dc940e0a45af45160a6678cba30bcf9b6265d1fffb274b73ae"
 
     define_method(:install) do
       bin.install "cleaner"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/stawan15/Download-scanner/releases/download/v1.1.2/Download-scanner_1.1.2_darwin_arm64.tar.gz"
-    sha256 "49db5e248a18c0565ba3e28fc207657fc797dfe745dcbc11042ac798ab3de552"
+    url "https://github.com/stawan15/Download-scanner/releases/download/v1.1.3/Download-scanner_1.1.3_darwin_arm64.tar.gz"
+    sha256 "d8e5e7e4db4bba31ebf32ebdc72c3149e71b3225f767b98aa471ae7d656141f2"
 
     define_method(:install) do
       bin.install "cleaner"
