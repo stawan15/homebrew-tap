@@ -1,4 +1,4 @@
- class DownloadInboxCleaner < Formula
+class DownloadInboxCleaner < Formula
     desc "Cautious macOS command-line tool for reviewing and organizing Downloads"
     homepage "https://github.com/stawan15/Download-scanner"
     url
