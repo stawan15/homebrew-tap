@@ -5,21 +5,21 @@
 class KamalTui < Formula
   desc "A Terminal UI for Kamal deployments"
   homepage "https://github.com/stawan15/kamal-tui"
-  version "2.4.0"
+  version "2.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stawan15/Kamal-TUI/releases/download/v2.4.0/kamal-tui_Darwin_x86_64.tar.gz"
-      sha256 "1fee25d8e35690ad2929a4aca66f4b825437a31aaec07cf39d69a3ff196dab4f"
+      url "https://github.com/stawan15/Kamal-TUI/releases/download/v2.4.1/kamal-tui_Darwin_x86_64.tar.gz"
+      sha256 "71146d656c7a80e97472896e3936daec38641330c7c71eb4eaba2fc547a9fb51"
 
       define_method(:install) do
         bin.install "kamal-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stawan15/Kamal-TUI/releases/download/v2.4.0/kamal-tui_Darwin_arm64.tar.gz"
-      sha256 "b4139f126b0f357b1e730b33d325be8caec4e993e2f0d2563f8eb43662c7f217"
+      url "https://github.com/stawan15/Kamal-TUI/releases/download/v2.4.1/kamal-tui_Darwin_arm64.tar.gz"
+      sha256 "68c71ccb0691b5c20d2f9099c523398f6156622e5f7fd9c630a87fb6d4be71ba"
 
       define_method(:install) do
         bin.install "kamal-tui"
@@ -29,15 +29,15 @@ class KamalTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stawan15/Kamal-TUI/releases/download/v2.4.0/kamal-tui_Linux_x86_64.tar.gz"
-      sha256 "cccf274aa1f1e54f618db90b915ec6d980bd87c177b51e3890b96208ebcfe67d"
+      url "https://github.com/stawan15/Kamal-TUI/releases/download/v2.4.1/kamal-tui_Linux_x86_64.tar.gz"
+      sha256 "88a3d7ae91e89375388f825689060e2668e80db35d699b1d88f3e4473c108698"
       define_method(:install) do
         bin.install "kamal-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stawan15/Kamal-TUI/releases/download/v2.4.0/kamal-tui_Linux_arm64.tar.gz"
-      sha256 "e2d39c434ea79d04e1147de86c372fc59d772fa442c1a1320c97a53d2edc445d"
+      url "https://github.com/stawan15/Kamal-TUI/releases/download/v2.4.1/kamal-tui_Linux_arm64.tar.gz"
+      sha256 "a17cd77c5cd3a317b56531a3a8623cbce831f62db6be0d9aefc8057f5d3dbdee"
       define_method(:install) do
         bin.install "kamal-tui"
       end
