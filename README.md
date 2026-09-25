@@ -29,3 +29,12 @@ brew uninstall kamal-tui
 ## License
 
 Formula metadata references the MIT license for `kamal-tui`.
+
+## litty
+
+A tiny, fast terminal emulator: https://github.com/stawan15/litty
+
+```bash
+brew install --cask stawan15/tap/litty   # macOS app
+brew install stawan15/tap/litty          # Linux
+```
