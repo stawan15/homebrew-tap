@@ -1,6 +1,6 @@
 cask "litty" do
-  version "0.4.0"
-  sha256 "612eee1806914cbfcf2a364e45e4e8d33344d706157517a08ef848651b39e2ca"
+  version "0.5.0"
+  sha256 "1197949f81a080cad91487a4c87d0e8b4ba10a2f3c80c771cd7150dc6887a06a"
 
   url "https://github.com/stawan15/litty/releases/download/v#{version}/litty-#{version}-macos-universal.dmg"
   name "litty"
