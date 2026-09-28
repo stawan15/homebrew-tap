@@ -1,7 +1,7 @@
 class Litty < Formula
   desc "Tiny, fast, zero-config terminal emulator"
   homepage "https://github.com/stawan15/litty"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   # macOS users: `brew install --cask stawan15/tap/litty` (the app bundle).
@@ -9,10 +9,10 @@ class Litty < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/stawan15/litty/releases/download/v#{version}/litty-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "631899d2fedfd7986992406b8018f7759c07b2fcdefef3a965002a2a2b4d2a65"
+    sha256 "78d0071d767eade41b65e52c5f07a38523b03f5af3a8d7f1c76c129f4f32d9cb"
   else
     url "https://github.com/stawan15/litty/releases/download/v#{version}/litty-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "1a54720077c2f85b6e37815c157abdcc96119be37d3e8ea028265c76e19e3102"
+    sha256 "046082538d82f9269d913c9590a725aea3e1cacf6ca570cab82654e7415796ba"
   end
 
   def install
